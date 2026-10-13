@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* PERBAIKAN: Mengaktifkan scroll vertikal (ke bawah) di semua perangkat */
+html,
+body {
+  overflow-y: auto !important; /* Diubah dari 'hidden' menjadi 'overflow-y: auto' */
+  min-height: 100%;            /* Diubah menjadi min-height agar halaman bisa memanjang ke bawah */
+}
+
+body {
+  background: radial-gradient(
+    circle at center,
+    #111827 0%,
+    #030712 50%,
+    #000000 100%
+  );
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gallery-image {
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  user-select: none;
+}
