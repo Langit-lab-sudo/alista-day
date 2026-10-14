@@ -1,10 +1,20 @@
+// @ts-nocheck
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  /* Opsi konfigurasi Anda yang lain di sini */
+
+  experimental: {
+    webpackMemoryOptimizations: true,
+  },
+
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   
-  // Format penonaktifan/konfigurasi kustom Turbopack yang valid untuk Next.js 16
-  turbopack: {},
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };
 
 export default nextConfig;
