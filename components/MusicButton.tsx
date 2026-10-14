@@ -114,7 +114,7 @@ export default function MusicPlayer({ autoPlay = false,}: MusicPlayerProps) {
             {/* Album */}
             <div className="overflow-hidden rounded-3xl relative">
               <img
-                src="/memories/h6.webp"
+                src="/memories/alista1.webp"
                 alt="album"
                 className="
                   w-full
